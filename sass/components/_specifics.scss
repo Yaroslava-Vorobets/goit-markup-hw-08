@@ -1,0 +1,31 @@
+.specify__list {
+    width: 270px;
+}
+
+.specify__list:not(:first-child) {
+    margin-left: 30px;
+}
+
+.specify__block {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.specify__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.specify__text {
+    line-height: 1.71;
+    color: var(--specify-text-color);
+}

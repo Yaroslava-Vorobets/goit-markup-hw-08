@@ -1,0 +1,112 @@
+:root {
+    --logo-color: #000;
+    --hero-color: #2F303A;
+    --background-color: #fff;
+    --body-color: #212121;
+    --main-title-color: #FFFFFF;
+    --second-title-color: #212121;
+    --accent-color: #2196F3;
+    --btn-color: #fff;
+    --btn-hover-color: #188CE8;
+    --menu-link-color: #212121;
+    --header-link-color: #757575;
+    --specify-text-color: #757575;
+    --secondary-title-color: #212121;
+    --teem__name-color: #212121;
+    --teem__bg-color: #F5F4FA;
+    --teem__list-bg-color: #FFFFFF;
+    --teem__description-color: #757575;
+    --portfolio-bg-color: #fff;
+    --portfolio-description-color: #212121;
+    --portfolio-text-color: #757575;
+    --portfolio-btn-color: #212121;
+    --portfolio__btn-bg-color: #F5F4FA;
+    --portfolio-btn-hover-color: #fff;
+    --portfolio-btn-bg-hover-color: #2196F3;
+    --footer-bg-color: #2F303A;
+    --logo-footer-color: #fff;
+    --footer-address-color: #fff;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --footer-link-hover-color: #FFFFFF99;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto/Roboto-Medium.eot);
+    src: url(../fonts/Roboto/Roboto-Medium.eot) format('embedded-opentype'),
+        url(../fonts/Roboto/Roboto-Medium.svg) format('svg'),
+        url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype'),
+        url(../fonts/Roboto/Roboto-Medium.woff) format('woff'),
+        url(../fonts/Roboto/Roboto-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.eot);
+    src: url(../fonts/Roboto/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Roboto/Roboto-Regular.svg#Roboto-Regular) format('svg'),
+        url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype'),
+        url(../fonts/Roboto/Roboto-Regular.woff) format('woff'),
+        url(../fonts/Roboto/Roboto-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto/Roboto-Bold.eot);
+    src: url(../fonts/Roboto/Roboto-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Roboto/Roboto-Bold.svg#Roboto-Bold) format('svg'),
+        url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype'),
+        url(../fonts/Roboto/Roboto-Bold.woff) format('woff'),
+        url(../fonts/Roboto/Roboto-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../fonts/Roboto/Roboto-Black.eot);
+    src: url(../fonts/Roboto/Roboto-Black.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Roboto/Roboto-Black.svg#Roboto-Black) format('svg'),
+        url(../fonts/Roboto/Roboto-Black.ttf) format('truetype'),
+        url(../fonts/Roboto/Roboto-Black.woff) format('woff'),
+        url(../fonts/Roboto/Roboto-Black.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.eot);
+    src: url(../fonts/Montserrat/Montserrat-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Montserrat/Montserrat-Regular.woff2) format('woff2'),
+        url(../fonts/Montserrat/Montserrat-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Bold.eot);
+    src: url(../fonts/Montserrat/Montserrat-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Montserrat/Montserrat-Bold.woff2) format('woff2'),
+        url(../fonts/Montserrat/Montserrat-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway/Raleway-Bold.eot);
+    src: url(../fonts/Raleway/Raleway-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Raleway/Raleway-Bold.woff2) format('woff2'),
+        url(../fonts/Raleway/Raleway-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
