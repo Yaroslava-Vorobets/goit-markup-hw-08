@@ -14,10 +14,10 @@
     <!-- <link rel="stylesheet" href="./css/styles.css">   -->
 </head>
 <body>
-    <header class="header">
+    <header class="header"> 
         <div class="container">
-            <nav class="header-menu d-flex">
-                <a lang="en" href="#" class="logo link"><span class="logo-blue">Web</span>Studio</a>
+            <a lang="en" href="#" class="logo link"><span class="logo-blue">Web</span>Studio</a>
+            <nav class="header-menu d-flex">              
                 <ul class="menu-list list">
                     <li>
                         <a class="menu-link link current" href="index.html">Студия</a>
@@ -45,9 +45,72 @@
                         </svg> +38 096 111 11 11
                     </a>
                 </li>
-            </ul>
-        </div>
-    </header>
+            </ul>           
+            <button class="mob-menu__open--btn" type="button">
+                <svg class="menu-hamburger__icon" width="40" height="40">
+                    <use href="./img/symbols.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+            <div class="mob-menu">
+                <div class="container">                   
+                    <div class="mob-menu--top">
+                        <button class="mob-menu__close--btn">
+                            <svg class="mob-menu__close-icon" width="40" height="40">
+                                <use href="./img/symbols.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu__list list">
+                            <li>
+                                <a class="mob-menu__link link current" href="index.html">Студия</a>
+                            </li>
+                            <li>
+                                <a class="mob-menu__link link" href="portfolio.html">Портфолио</a>
+                            </li>
+                            <li>
+                                <a class="mob-menu__link link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu--bottom">
+                        <ul class="mob-menu__contact list">
+                            <li>
+                                <a class="mob-menu__tel link" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mob-menu__mail link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mob-menu__socials list">
+                            <li class="mob-menu__soc-item">
+                                <a href="https://www.google.com/" class="mob-menu__soc-link link" target="_blank"
+                                    rel="noopener nofollow noreferrer">Instagram
+                                </a>
+                            </li>
+                            <li class="mob-menu__soc-item">
+                                <a href="https://www.google.com/" class="mob-menu__soc-link link" target="_blank"
+                                    rel="noopener nofollow noreferrer">Twitter
+                                </a>
+                            </li>
+                            <li class="mob-menu__soc-item">
+                                <a href="https://www.google.com/" class="mob-menu__soc-link link" target="_blank"
+                                    rel="noopener nofollow noreferrer">Facebook
+                                </a>
+                            </li>
+                            <li class="mob-menu__soc-item">
+                                <a href="https://www.google.com/" class="mob-menu__soc-link--last link" target="_blank"
+                                    rel="noopener nofollow noreferrer">LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </header> 
     <main>
         <section class="hero section">
             <div class="container">
@@ -60,7 +123,7 @@
         <section class="specifics section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности нашей команды</h2>
-                <ul class="specify list d-flex">
+                <ul class="specify list">
                     <li class="specify__list">
                         <div class="specify__block">
                             <svg class="specify__icon" width="70" height="70">
@@ -126,19 +189,25 @@
                         <div class="employ__overlay">
                             <p class="employ__text">Десктопные приложения</p>
                         </div>
-                        <img src="img/box_1.jpg" alt="work_space" width="370">                                          
+                        <img  srcset="img/box_1.jpg  1x,
+                                    img/box_1-2x.jpg  2x"
+                        src="img/box_1.jpg" alt="work_space" width="370">                                                             
                     </li>
                     <li class="employ__photo">
                         <div class="employ__overlay">
                            <p class="employ__text">Мобильные приложения</p>
                         </div> 
-                        <img src="img/box_2.jpg" alt="laptop" width="370">
+                        <img  srcset="img/box_2.jpg  1x,
+                                    img/box_2-2x.jpg  2x"                       
+                        src="img/box_2.jpg" alt="laptop" width="370">
                     </li>
                     <li class="employ__photo">
                         <div class="employ__overlay">
                            <p class="employ__text">Дизайнерские решения</p>
                         </div> 
-                        <img src="img/box_3.jpg" alt="tablet" width="370">
+                        <img srcset="img/box_3.jpg  1x,
+                                    img/box_3-2x.jpg  2x"   
+                        src="img/box_3.jpg" alt="tablet" width="370">
                     </li>
                 </ul>
             </div>
@@ -150,7 +219,20 @@
                 </h2>
                 <ul class="teem__list list">
                     <li>
-                        <img class="teem__photo" src="img/teamcard_1.jpg" alt="Демьяненко" width="270">                      
+                        <picture>
+                            <source
+                              srcset="img/teemcard_1.jpg 1x,
+                                    img/teemcard_1-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                            <source
+                            srcset="img/teemcard-tab.jpg 1x,
+                                            img/teemcard-tab-2x.jpg 2x"
+                                            media="(min-width: 768px)">
+                            <source srcset="img/teemcard1-mob.jpg 1x,
+                                        img/teemcard1-mob-2x.jpg 2x"
+                                         media="(min-width: 320px)">
+                            <img class="teem__photo" src="img/teemcard_1.jpg" alt="Демьяненко" width="270">
+                        </picture>                                          
                         <h3 class="teem__name">Игорь Демьяненко</h3>
                         <p class="teem__description">Product Designer</p>
                         <ul class="socials list">
@@ -185,7 +267,17 @@
                         </ul>
                     </li>
                     <li>
-                        <img class="teem__photo" src="img/teamcard_2.jpg" alt="Репина" width="270">                       
+                        <picture>
+                            <source srcset="img/teemcard_2.jpg 1x,
+                                            img/teemcard_2-2x.jpg 2x"
+                                             media="(min-width: 1200px)">
+                            <source srcset="img/teemcard-tab2.jpg 1x,
+                                            img/teemcard-tab2-2x.jpg 2x"
+                                             media="(min-width: 768px)">
+                            <source srcset="img/teemcard2-mob.jpg 1x,
+                                            img/teemcard2-mob-2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="teem__photo" src="img/teemcard_2.jpg" alt="Репина" width="270">
+                        </picture>                                            
                         <h3 class="teem__name">Ольга Репина</h3>
                         <p class="teem__description">Frontend Developer</p> 
                         <ul class="socials list">
@@ -220,7 +312,18 @@
                         </ul>
                     </li>
                     <li>
-                        <img class="teem__photo" src="img/teamcard_3.jpg" alt="Тарасов" width="270">                       
+                        <picture>
+                            <source srcset="img/teemcard_3.jpg 1x,
+                                            img/teemcard_3-2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                            <source srcset="img/teemcard-tab3.jpg 1x,
+                                            img/teemcard-tab3-2x.jpg 2x"
+                                             media="(min-width: 768px)">
+                            <source srcset="img/teemcard3-mob.jpg 1x,
+                                            img/teemcard3-mob-2x.jpg 2x"
+                                             media="(min-width: 320px)">
+                            <img class="teem__photo" src="img/teemcard_3.jpg" alt="Тарасов" width="270">
+                        </picture>                                              
                         <h3 class="teem__name">Николай Тарасов</h3>
                         <p class="teem__description">Marketing</p> 
                         <ul class="socials list">
@@ -255,7 +358,17 @@
                         </ul>
                     </li>
                     <li>
-                        <img class="teem__photo" src="img/teamcard_4.jpg" alt="Ермаков" width="270">                     
+                        <picture>
+                            <source srcset="img/teemcard_4.jpg 1x,
+                                                                    img/teemcard_4-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="img/teemcard-tab4.jpg 1x,
+                                            img/teemcard-tab4-2x.jpg 2x"
+                                             media="(min-width: 768px)">
+                            <source srcset="img/teemcard4-mob.jpg 1x,
+                                            img/teemcard4-mob-2x.jpg 2x"
+                                             media="(min-width: 320px)">
+                            <img class="teem__photo" src="img/teemcard_4.jpg" alt="Ермаков" width="270">
+                        </picture>                                            
                         <h3 class="teem__name">Михаил Ермаков</h3>
                         <p class="teem__description">UI Designer</p> 
                         <ul class="socials list">
@@ -292,7 +405,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <section class="clients section">
             <div class="container">
                 <h2>Постоянные клиенты</h2>
                 <ul class="clients-list list">
@@ -340,14 +453,14 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> 
+     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-wrap">
                 <a href="#" class="logo-footer link"><span class="logo-blue">Web</span>Studio</a>
                 <address>
-                    <ul class="list">
+                    <ul class="footer-lists list">
                         <li class="footer-list">
                             <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
                         </li>
@@ -393,7 +506,7 @@
             </div> 
             <div class="contact-form">
                 <p class="form-text">Подпишитесь на рассылку</p>
-                <form class="footer-form d-flex">                                      
+                <form class="footer-form">                                      
                     <input class="form-list" type="email" name="email" id="e-mail" placeholder="E-mail" required>                                                   
                     <button class="form-btn btn" type="submit">Подписаться
                         <svg class="icon-send" width="17" height="17">
@@ -458,7 +571,8 @@
                 <button class="modal__check-btn" type="submit">Отправить</button>
             </form>
         </div>
-    </div>
+    </div> 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -3,18 +3,26 @@
     background-color: #fff
 }
 
-header .container {
+header >.container {
     display: flex;
     align-items: center;
 }
 
-
+ .header-menu {
+     display: none;
+     @include tablet {
+         display: block;
+     }
+  }
 .logo,
 .header-mail,
 .header-tel,
 .menu-link {
-    padding: 24px 0 25px;
+    padding: 24px 0 25px;      
+    
 }
+
+
 
 .logo,
 .logo-blue {
@@ -37,15 +45,14 @@ header .container {
     align-items: center;
 }
 
-.menu-list>li {
-    position: relative;
+.menu-list>li {  
     &:not(:last-child) {
         margin-right: 50px;
     }
 }
 
 .menu-link {
-    font-weight: 500;
+    font-weight: 500;    
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--link-color);
@@ -77,14 +84,16 @@ header .container {
         }  
     .menu-list &.current {
         color: var(--accent-color);
-    }
+    }  
 }
 
 .header-link>li {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
     color: var(--header-link-color);
+    @include desktop {
+        justify-content: center;
+    }
 }
 
 .envelope-icon,
@@ -97,8 +106,7 @@ header .container {
 }
 
 .header-mail,
-.header-tel {
-    font-size: 14px;
+.header-tel {   
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -114,14 +122,45 @@ header .container {
         &:focus {
             color: var(--accent-color);
         }
+   
 }
 
 
-.header-link {
+.header-link {   
     display: flex;
-    margin-left: auto;
-    & li:not(:last-child) {
-            margin-right: 30px;
+    margin-left: auto;   
+    display: none;
+    @include tablet {
+        display: block;
+        padding: 21px 0;
+        flex-direction: column;              
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        padding: 24px 0 25px;
+        & li:not(:last-child) {
+                margin-right: 30px;
+            }
+ }
+}
+
+.header-mail,
+.header-tel {
+    @include tablet {           
+            padding:  0; 
+            font-size: 12px;     
+        }
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+
+.header-mail {
+    margin-bottom: 10px;
+    @include desktop {
+        margin-bottom: 0;
         }
 }
-
+ 

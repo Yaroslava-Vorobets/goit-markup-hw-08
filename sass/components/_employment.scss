@@ -1,4 +1,7 @@
 .employment {
+    @media screen and (max-width: 769px) {
+           display: none;
+        }
     padding-bottom: 94px;
 }
 

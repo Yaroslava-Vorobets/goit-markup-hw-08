@@ -1,6 +1,9 @@
 
 .section {
-    padding: 94px 0;
+    padding: 60px 0;   
+    @include desktop {
+        padding: 94px 0;
+    }
 }
 
 body {
@@ -36,6 +39,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .d-flex {
@@ -63,10 +67,23 @@ img {
 
 h2 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    // font-size: 36px;
+    // line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
     color: var(--secondary-title-color);
     letter-spacing: 0.03em;
+    @include mobile {
+            font-size: 28px;
+            line-height: 1.14;
+            margin-bottom: 30px;
+        }
+    @include tablet {
+
+    }
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
