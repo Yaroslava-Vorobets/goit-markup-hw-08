@@ -45,7 +45,9 @@ header >.container {
     align-items: center;
 }
 
-.menu-list>li {  
+.menu-list>li { 
+    position: relative; 
+    
     &:not(:last-child) {
         margin-right: 50px;
     }
@@ -69,7 +71,7 @@ header >.container {
         content: "";
         position: absolute;
         left: 0;
-        bottom: -8px;
+        bottom: -9px;
         width: 100%;
         height: 4px;
         border-radius: 2px;
