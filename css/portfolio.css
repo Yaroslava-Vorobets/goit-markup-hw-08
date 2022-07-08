@@ -626,11 +626,16 @@ header > .container {
 @media screen and (min-width: 768px) {
   .portfolio-card {
     width: calc((100% - 30px) / 2);
+    height: 440px;
+  }
+  .portfolio-card:not(:last-child) {
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-card {
     width: calc(33.3333333333% - 30px);
+    width: 370px;
   }
 }
 .portfolio-card__link {
@@ -672,6 +677,7 @@ header > .container {
 }
 
 .portfolio-description {
+  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
