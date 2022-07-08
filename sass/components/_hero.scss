@@ -58,10 +58,7 @@
     margin-bottom: 30px;  
     line-height: 1.61;    
    
-    // @include tablet {
-    //     width: 768px;
-    // }
-
+   
     @include desktop {
         max-width: 696px;
         width: 100%;
